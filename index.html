@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-	<title>SymfonyDay Italia</title>
+	<title>SymfonyDay It - 5 ottobre 2012, Torino</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Giornata dedicata al web framework Symfony e PHP">
 
@@ -15,6 +15,30 @@
 			text-align: center;
 			
 		}
+
+    .stay_tuned {
+      font-size: 24px;
+      color: #ccc;
+    }
+
+
+    table#social_button td{
+      height: 150px;
+    }
+
+    table#sponsors{
+      width:100%;
+      margin-top: 20px;
+    }
+
+    #place{
+      font-size: 20px;
+    }
+
+    #cfp{
+      font-size: 15px;
+    }
+
 	</style>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" />
@@ -29,17 +53,42 @@
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
     <div class="container">
-        <img src="img/symfonyday_it_minimal.png" alt="Symfony day 2012">
-	    <h1 style="clear: both">Torino, 5 ottobre 2012</h1>
-	    <p>c/o I3P, Via Pier Carlo Boggio 59</p>
-
-	    <h2><i>stay tuned ...</i></h2>
-
-	    <a href="https://twitter.com/share" class="twitter-share-button" data-via="SymfonyDayIt" data-lang="it" data-size="large">Tweet</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        <div class="fb-like" data-href="https://www.facebook.com/pages/SymfonyDayIt" data-send="true" data-width="450" data-show-faces="true" data-font="tahoma"></div>
+        <img src="img/symfonyday_it_minimal.png" alt="Symfony day 2012" />
         
-        <div class="g-plusone" data-annotation="inline"></div>
+	     <h1 style="clear: both">Torino, 5 ottobre 2012
+        <a id="place" href="http://goo.gl/maps/3RlZ">c/o I3P, Via Pier Carlo Boggio 59</a></h1>
+        <table id="social_button">
+        <tr>
+          <td>
+            <div class="fb-like" data-href="https://www.facebook.com/pages/SymfonyDayIt" data-send="false" data-width="450" data-show-faces="false" data-font="tahoma"></div>
+          </td>
+          <td>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://symfonyday.it" data-text="SymfonyDayIt 5 ottobre 2012, Torino: http://symfonyday.it #symfony" data-via="symfonydayit" data-size="large" data-lang="it" data-related="symfonydayit" data-hashtags="symfonyday">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+           
+          </td>
+          
+          <td><div class="g-plusone" data-annotation="inline"></div></td>
+        </tr>
+      </table>
+        <p id="cfp">Hai qualcosa di interessante da raccontarci su Symfony2? <a href="http://goo.gl/7e4QY">Inviaci</a> la tua proposta di presentazione, hai tempo fino al 3 agosto!</a><p>
+	    
+      
+	   
+        <h1 class="stay_tuned"><i>stay tuned!</i></h1>
+
+        <table id="sponsors">
+        <tr>
+          <td>
+           <a href="http://ideato.it"><img src="img/sponsor_ideato.png" alt="ideato" /></a>
+          </td>
+          <td>
+            <a href="http://skuola.net"><img src="img/sponsor_skuola.png" alt="skuola.net" /></a>
+          </td>
+          
+          <td><a href="http://grusp.org"><img src="img/logo_grusp.png" alt="GrUSP" /></a> </td>
+        </tr>
+      </table>
         
 	</div>
 
