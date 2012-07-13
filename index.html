@@ -1,106 +1,452 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-	<title>SymfonyDay It - 5 ottobre 2012, Torino</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Giornata dedicata al web framework Symfony e PHP">
 
-	<style>
-		body{
-			font-family: arial;
-			
-		}
-		html {
-			text-align: center;
-			
-		}
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	
+	<title>Grusp Presents</title>
+	
+	<!-- Responsive and mobile friendly stuff -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Exo:200,900,700,400|Pacifico' rel='stylesheet' type='text/css'>
+  
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/grid_12_percent.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
+	
 
-    .stay_tuned {
-      font-size: 24qw px;
-      color: #ccc;
-    }
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/ie7_8.css">
+	<![endif]-->
 
 
-    table#social_button td{
-      height: 150px;
-    }
+	
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
 
-    table#sponsors{
-      width:100%;
-      margin-top: 20px;
-    }
-
-    #place{
-      font-size: 20px;
-    }
-
-    #cfp{
-      font-size: 15px;
-    }
-
-	</style>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" />
 </head>
+
+
 <body>
-    <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/it_IT/all.js#xfbml=1";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-    <div class="container">
-        <img src="img/symfonyday_it_minimal.png" alt="Symfony day 2012" />
-        
-	     <h1 style="clear: both">Torino, 5 ottobre 2012
-        <a id="place" href="http://goo.gl/maps/3RlZ">c/o I3P, Via Pier Carlo Boggio 59</a></h1>
-        <table id="social_button">
-        <tr>
-          <td>
-            <div class="fb-like" data-href="https://www.facebook.com/pages/SymfonyDayIt" data-send="false" data-width="450" data-show-faces="false" data-font="tahoma"></div>
-          </td>
-          <td>
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://symfonyday.it" data-text="SymfonyDayIt 5 ottobre 2012, Torino: http://symfonyday.it #symfony" data-via="symfonydayit" data-size="large" data-lang="it" data-related="symfonydayit" data-hashtags="symfonyday">Tweet</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-           
-          </td>
-          
-          <td><div class="g-plusone" data-annotation="inline"></div></td>
-        </tr>
-      </table>
-        <p id="cfp">Hai qualcosa di interessante da raccontarci su Symfony2? <a href="http://goo.gl/7e4QY">Inviaci</a> la tua proposta di presentazione, hai tempo fino al 3 agosto!</a><p>
-	    
-      
-	   
-        <h1 class="stay_tuned"><i>stay tuned!</i></h1>
 
-        <table id="sponsors">
-        <tr>
-          <td>
-           <a href="http://ideato.it"><img src="img/sponsor_ideato.png" alt="ideato" /></a>
-          </td>
-          <td>
-            <a href="http://skuola.net"><img src="img/sponsor_skuola.png" alt="skuola.net" /></a>
-          </td>
-          
-          <td><a href="http://grusp.it"><img src="img/logo_grusp.png" alt="GrUSP" /></a> </td>
-        </tr>
-      </table>
-        
-	</div>
+	<div id="wrapper">
+		<div id="site_wrapper">
+			<header id="site_heaer" class="container">
+				<a name="top"></a> 
+				<div class="grusp_header">
+					<a id="logo_grups" href="http://www.grusp.it/">Associazione Gruppo Utenti Sviluppatori PHP Italiani</a>
+					<h4>presenta</h4>
+				</div>
+				
+				<div class="event_title">
+					<div class="event_logo column_3">
+						<img src="img/logo_symfony.png" alt="logo_symfony" />
+					</div>
+					<div class="event_name column_9">
+						<h1 id="fittext1">SYMFONY<em>DAY</em></h1>
+						<h2 id="fittext2">TORINO, 5 OTTOBRE 2012</h2>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				
+				<div class="share">
+					<!-- AddThis Button BEGIN -->
+					<h4>Share</h4>
+					<div class="addthis_wrapper">
+						<div class="addthis_toolbox addthis_default_style ">
+						<a class="addthis_button_facebook_like" fb:like:layout="button_count" fb:like:width="120"></a>
+						<a class="addthis_button_tweet"></a>
+						<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+						</div>
+						<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4feae2dc05ce85fb"></script>
+						<!-- AddThis Button END -->
+					</div>
+				</div>
+				<div class="separator"></div>
 
-    <script type="text/javascript">
-      window.___gcfg = {lang: 'it'};
+			</header>
+			
+			<section class="alpha_8">
+				<div class="container group">
+					<div class="colun_12 centered center">
+						<h3>Call for paper</h3>
+						<p>Vuoi essere tra gli speaker del SymfonyDay? Invia la tua proposta hai tempo fino al 3 agosto.</p>
+						<a class="btn" href="http://goo.gl/7e4QY" title="">Proponi il tuo talk</a>
+					</div>
+					
+					
+					<!--div class="speaker">
+						<div class="speaker_pix">
+							<figure>
+								<a href="#" title=""><img src="img/sample_img_speaker.jpg" alt="sample_img_speaker" width="100" height="100" /></a>
+							</figure>
+						</div>
+						
+						<div class="speaker_bio">
+							<h4><a href="#" title="">Test Driven Development with Symfony 2</a></h4>
+							<h5><a href="#" title="">Alessandro Cinelli</a></h5> 
+							<p>Dietro l'organizzazione della conferenza c'è WEBdeBS, un gruppo di persone accomunate dal fatto di nutrire una forte passione per tutto quello che ruota attorno al web (ma non solo) e dall'essere bresciani (ma non solo). </p>
+						</div>
+						<div class="clear"></div>
+					</div>
+					
+					<div class="speaker right">
+						<div class="speaker_pix">
+							<figure>
+								<a href="#" title=""><img src="img/sample_img_speaker.jpg" alt="sample_img_speaker" width="100" height="100" /></a>
+							</figure>
+						</div>
+						
+						<div class="speaker_bio">
+							<h4><a href="#" title="">Test Driven Development with Symfony 2</a></h4>
+							<h5><a href="#" title="">Alessandro Cinelli</a></h5> 
+							<p>Dietro l'organizzazione della conferenza c'è WEBdeBS, un gruppo di persone accomunate dal fatto di nutrire una forte passione per tutto quello che ruota attorno al web (ma non solo) e dall'essere bresciani (ma non solo). </p>
+						</div>
+						<div class="clear"></div>
+					</div-->
+					
+					
+					
+					<!-- Follow us -->
+					<div class="follow_us">
+						<h4 class="deco">Seguici!</h4>
+						
+						<ul class="social_grusp">
+							<li class="grusp_fb"><a href="https://www.facebook.com/GrUSP" title="">Facebook</a></li>
+							<li class="grusp_twitter"><a href="http://twitter.com/symfonydayit" title="">Twitter</a></li>
+							<!--li class="grusp_flickr"><a href="#" title="">Flickr</a></li-->
+							<!--li class="grusp_youtube"><a href="#" title="">Yuotube</a></li-->
+							<li class="grusp_vimeo"><a href="http://vimeo.com/grusp" title="">Vimeo</a></li>
+						</ul>
+					</div>
+					
+					
+					
+				</div>
+				<div class="separator"></div>
+			</section>
+			
+			<section class="alpha_16">
+				<div class="container group">
+					<h3 class="column_12">La conferenza</h3>
+					
+					<div class="column_6">
+						<p><strong>Symfony 2 &egrave; uno dei framework PHP pi&uacute; apprezzati sul mercato.</strong></p>
 
-      (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        po.src = 'https://apis.google.com/js/plusone.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-      })();
-    </script>
-    
+<p>Symfony 2 e' diventato il riferimento per quanto riguarda lo sviluppo ad alto livello con PHP e molti software open source, come Drupal, eZ Publish e phpBB hanno gia' iniziato ad includerlo al loro interno. Il Symfony|Day e' l'evento di riferimento su Symfony che introduce le best practice e ne mostra case study ad alto livello.
+</p>
+</div>
+					<div class="column_6">
+<p>
+
+</p>
+					</div>
+					
+					
+					<div class="clear"></div>
+				</div>
+				<div class="separator"></div>
+			</section>
+			
+			
+			<!--section class="alpha_24">
+				<div class="container group">
+					<h3 class="center">Il programma</h3>
+					
+					<table id="schedule" border="0" cellspacing="0" cellpadding="0">
+						<thead>
+							<tr>
+								<th>
+									Time
+								</th>
+								<th>
+									Track 1
+								</th>
+								<th>
+									Track 2
+								</th>
+							</tr>
+						</thead>	
+					  <tr class="common_event">
+					  	<td class="time">8:30 &ndash; 9:30</td>
+					    <td colspan="2"><h4><a href="#" title="">Check-in</a></h4></td>
+					  </tr>
+					  <tr class="common_event">
+					  	<td class="time">9:30 &ndash; 9:45</td>
+					    <td colspan="2"><h4><a href="#" title="">Intro</a></h4></td>
+					  </tr>
+					
+					  <tr class="break">
+					    <td class="time">9:45 &ndash; 10:45</td>
+					    <td colspan="2">
+					    	<h4><strong>Coffee Break</strong></h4>
+					    </td>
+					  </tr>
+					  
+					  <tr>
+					    <td class="time">11:00 &ndash;12:00</td>
+					    
+					    <td>
+						     <h4><a href="#" title="">Title and topic of this workshop</a></h4>
+						     <a href="#" title="">Speaker Name</a><br />
+						     <a class="more" href="#" title="">Più info</a>
+					    </td>
+					    
+					    
+					    
+					    <td>
+						     <h4><a href="#" title="">Title and topic of this workshop</a></h4>
+						     <a href="#" title="">Speaker Name</a>
+					    </td>
+					  </tr>
+					  
+					  
+					  <tr>
+					    <td class="time">11:00 &ndash;12:00</td>
+					    
+					    <td>
+					    	<h4><a href="#" title="">Title and topic of this workshop</a></h4>
+					     	<a href="#" title="">Speaker Name</a>
+					    </td>
+					    
+					    <td>
+					    	<h4><a href="#" title="">Title and topic of this workshop</a></h4>
+					     	<a href="#" title="">Speaker Name</a>
+					    </td>
+					  </tr>
+					 				  
+					  				  
+					  <tr class="break lunch">
+					 	<td class="time">13:00 &ndash;14:30</td>
+	
+					    <td colspan="2"><h4><strong>Lunch Break</strong></h4></td>
+					  </tr>
+					  
+					  
+					 <tr>
+					    <td class="time">14:30 &ndash; 15:30</td>
+					    
+					    <td>
+					    	<h4><a href="#" title="">Title and topic of this workshop</a></h4>
+					     	<a href="#" title="">Speaker Name</a>
+					    </td>
+					    
+					    <td>
+					    	<h4><a href="#" title="">Title and topic of this workshop</a></h4>
+					     	<a href="#" title="">Speaker Name</a>
+					    </td>				    
+					    
+					  </tr>
+					  
+					  
+					  <tr>
+					    <td class="time">15:30 &ndash; 16:30</td>				    
+					    <td>
+					    	<h4><a href="#" title="">Title and topic of this workshop</a></h4>
+					     	<a href="#" title="">Speaker Name</a>
+					    </td>
+					    
+					    <td>
+					    	<h4><a href="#" title="">Title and topic of this workshop</a></h4>
+					     	<a href="#" title="">Speaker Name</a>
+					    </td>
+					    
+					  </tr>
+					  
+					  
+					  <tr class="break">
+					    <td class="time">16:30 &ndash; 17:00</td>
+					    <td colspan="2">
+					    	<h4><strong>Coffee Break</strong></h4>
+					    </td>
+					  </tr>
+					  
+					  
+					  <tr>
+					    <td class="time">17:00 &ndash; 17:30</td>
+					   				    
+					    <td>
+					    	<h4><a href="#" title="">Title and topic of this workshop</a></h4>
+					     	<a href="#" title="">Speaker Name</a>
+					    </td>
+					    
+					    <td>
+					    	<h4><a href="#" title="">Title and topic of this workshop</a></h4>
+					     	<a href="#" title="">Speaker Name</a>
+					    </td>
+					  </tr>
+					  
+					  
+					  <tr>
+					    <td class="time">17:30 &ndash; 18:00</td>
+					    <td>
+					    	<h4><a href="#" title="">Title and topic of this workshop</a></h4>
+					     	<a href="#" title="">Speaker Name</a>
+					    </td>
+					    
+					    <td>
+					    	<h4><a href="#" title="">Title and topic of this workshop</a></h4>
+					     	<a href="#" title="">Speaker Name</a>
+					    </td>
+					    
+					  </tr>
+					  
+					  <tr class="break happy_hour">
+					    <td class="time">18:15 &ndash; 19:30</td>
+					    <td colspan="2">
+					    	<h4><strong>Happy Hour</strong></h4>
+					    </td>
+					  </tr>
+					  
+					</table>					
+								
+								
+					<div class="separator cnt_separator"></div>
+
+				</div>
+				
+				<div class="container group center">
+				
+					<h3>Registrati ora!</h3>
+					<div class="column_10 centered">
+						<script type="text/javascript" src="https://www.amiando.com/resources/js/amiandoExport.js"></script>
+						<iframe src="https://www.amiando.com/ftf2012.html?viewType=iframe&distributionChannel=CHANNEL_IFRAME&panelId=1344790&useDefaults=false&useEventColors=false&simple_cbox=222222&simple_ctext=FFFFFF&simple_clink=FFFFFF&resizeIFrame=true" frameborder="10" width="100%" height="450px" name="_amiandoIFrame13447901lewhkao" id="_amiandoIFrame13447901lewhkao"><p>This page requires frame support. Please use a frame compatible browser to see the amiando ticket sales widget.</p><p> Try out the <a href="http://www.amiando.com/">online event registration system</a> from amiando.</p></iframe>
+					</div>
+				
+				</div>
+				<div class="separator"></div>
+			</section-->
+			
+			
+			<section class="alpha_32">
+				<div class="container group">
+					<h3 class="column_12">Location</h3>
+					<div class="column_6 map">
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.it/maps?f=q&amp;source=s_q&amp;hl=it&amp;geocode=&amp;q=Via+Pier+Carlo+Boggio,+49+Torino&amp;aq=0&amp;output=embed"></iframe>
+<!-- <br /><small><a href="https://maps.google.it/maps?f=q&amp;source=embed&amp;hl=it&amp;geocode=&amp;q=Via+Giulio+Pastore,+21,+Cesena&amp;aq=0&amp;oq=via+giulio+pastore+21+cese&amp;sll=41.442726,12.392578&amp;sspn=12.428609,25.64209&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Via+Giulio+Pastore,+47522+Cesena+Forl%C3%AC-Cesena,+Emilia+Romagna&amp;z=14&amp;ll=44.157116,12.215339" style="color:#0000FF;text-align:left">Visualizzazione ingrandita della mappa</a></small>	 -->				
+					</div>
+					
+					<div class="column_6 legend right">
+						<dl>
+						  <dt class="event_location"><span><strong>Event location</strong></span></dt>
+						    <dd  class="event_location">
+						    	<strong>c/o <a href="http://www.i3p.it/">I3P</a></strong>
+								Via Pier Carlo Boggio 59<br />
+								10138 Torino, Italy
+							</dd>
+						  <dt class="eat"><span><strong>Dove mangiare</strong></span></dt>
+						    <dd>Ristoranti</dd>
+						  <dt class="get_to"><span><strong>Come arrivare</strong></span></dt>
+						    <dd>Trasporti</dd>
+						  <dt class="stay"><span><strong>Dove dormire</strong></span></dt>
+						    <dd>Alberghi</dd>
+						</dl>
+					</div>
+					
+					<div class="clear"></div>
+					
+					<div class="column_4">
+						<h5>In auto</h5>
+						<p></p>
+					</div>
+					
+					<div class="column_4">
+						<h5>In treno</h5>
+<p>
+</p>
+					</div>
+					
+					<div class="column_4">
+						<h5>In aereo</h5>
+<p>
+</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="separator"></div>
+			</section>
+			
+			
+			<section class="sponsors">
+				<div class="container group">
+					<h3>Gli sponsor</h3>
+					
+					<div class="gold_sponsors">
+						<h4>Gold</h4>
+						<a class="banner" href="http://www.ideato.it" title="ideato">
+							<img src="img/sposnor_ideato.jpg" alt="sposnor_ideato" />
+						</a>
+
+ 						<a class="banner" href="http://www.skuola.net" title="skuola.net">
+                                                        <img src="img/sponsor_skuola.png" alt="sposnor_skuola" />
+                                                </a>
+
+
+						
+						<div class="clear"></div>
+					</div>
+					
+					<div class="silver_sponsors">
+						<h4>Silver</h4>
+						<a class="banner" href="#" title="">
+						</a>
+						
+						<div class="clear"></div>
+					</div>
+					
+					<div class="bronze_sponsors">
+						<h4>Bronze</h4>
+						<a class="banner" href="http://www.gnvpartners.com" title="">
+							<img src="img/gnvpartners.png" alt="gnvpartners" width="300" height="120" />
+						</a>
+						
+						<a class="banner" href="http://www.servergrove.com" title="servergrove">
+							<img src="img/sponsor_servergrove.jpg" alt="servergrove" width="300" height="120" />
+						</a>						
+						<div class="clear"></div>
+					</div>
+					
+				</div>
+			</section>
+			
+			<footer id="site_footer">
+				<div class="container group">
+					<div class="ftr_info">
+						&copy; 2012 Grusp. Tutti i diritti riservati.
+						<ul>
+						 	<li><a href="http://www.grusp.org" title="">Cos'&egrave; il Grusp?</a></li>
+						 	<!--li><a href="#" title="">Privacy policy</a></li-->
+						 	<li><a href="mailto:info@grusp.org" title="">Contattaci</a></li>
+						</ul>
+					</div>
+					
+					<a id="back_top" href="#top" title="">Torna su</a>
+				</div>
+			</footer>
+			
+		</div> <!-- Closes #wrapper -->
+	</div><!-- Closes #site_wrapper -->
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+ 	<script src="js/jquery.fittext.js"></script>
+	<script type="text/javascript">
+		$("#fittext1").fitText(.8);
+		$("#fittext2").fitText(1.6);
+		//$("#fittext3").fitText(1.1, { minFontSize: 50, maxFontSize: '75px' });
+	</script>
+	
 </body>
 </html>

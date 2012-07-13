@@ -1,0 +1,768 @@
+/* Main CSS Document */
+/*
+
+Description: CSS for Grusp Events Site (June.2012)
+Version: 1.0
+Author: GNV&PARTNERS
+Author URI: http://www.gnvpartners.com/
+*/
+
+/* BASIC PAGE SETUP ============================================================================= */
+
+body {
+	background-color: #e55c46;/* rosso */ /* scegli il colore che preferisci per lo sfondo :) commentando o elimindando gli altri*/
+	background-color: #8d89a7;/* viola */
+	background-color: #da980b;/* giallo */
+	background-color: #928a74;/* grigio */
+	background-color: #7b99a4;/* azzurro ceruleo */
+	font-family: helvetica, verdana, arial, helve, sans-serif; 	
+	font-size: 15px;
+	line-height: 23px;
+	color : #000;
+	background-image: url(../img/bg_trangles_bottom.png);
+	background-repeat: repeat-x;
+	background-position: center bottom;
+}
+
+#wrapper{	
+	background: transparent url(../img/bg_trangles_top.png) repeat-x center top;
+}
+#site_wrapper{	
+	background: transparent url(../img/noise.png) repeat;
+}
+
+
+
+/* FONTS ============================================================================= */
+h1, h2, h3, #schedule thead th, .legend dd.event_location, .btn{
+	font-family: 'Exo', sans-serif;
+}
+
+
+.grusp_header, h4{
+	font-family: 'Pacifico', cursive;
+	letter-spacing: 1.3px;
+}
+
+
+/*  HEADINGS  ============================================================================= */
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+h1 { 
+	font-size : 100px;
+	line-height: 110px;
+	font-weight: 800;
+	color: #fff;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}
+h1 em{
+	font-style: normal;
+	font-weight: 200;
+}
+h1 a{
+	color: #fff;
+}
+
+h2 { 
+	font-size : 50px;
+	line-height: 60px;
+	font-weight: 800;
+	color: rgba(0, 0, 0, .4);
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, .1);
+}
+h2 a{
+	color: rgba(0, 0, 0, .3);
+}
+
+h3 { 
+	font-size: 30px;
+	line-height: 40px;
+	margin-bottom: 20px;
+	color: #fff;
+	font-weight: 900;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+h3 a{
+	color: #fff;
+}
+
+h4 { 
+	color: #000;
+	font-size: 20px;
+	line-height: 30px;	
+	text-align: center;
+}
+h4 a{
+	color: #000;
+	text-decoration: none;
+}
+
+.sponsors h4, h4.deco{
+	background: transparent url(../img/bg_h4_line.png) no-repeat center center;
+	margin-bottom: 20px;
+}
+
+
+.speaker h4{	
+	font-family: helvetica, verdana, arial, helve, sans-serif; 	
+	letter-spacing: normal;
+	text-align: left;
+	font-size: 18px;
+	font-weight: 800;
+}
+
+	
+
+h5 { 
+	color: #000;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 800;
+	margin-bottom: 10px;
+}
+
+.speaker h5 { 
+	color: #fff;
+	font-size: 14px;
+}
+.speaker h5 a{ 
+	text-decoration: none;
+	color: #fff;
+}
+
+
+
+h6 { 
+	color: #666;
+	font-size: 12px;
+}
+
+.center{
+	text-align: center;
+}
+
+/*  TYPOGRAPHY  ============================================================================= */
+
+p, ol, ul, dl, address { 
+	margin-bottom : 20px; 
+}
+
+p {
+	hyphens : auto;  
+}
+
+p a{	
+	color: #fff;
+	text-decoration: underline;
+}
+
+p strong{
+	font-weight: 800;
+}
+
+/* vendor specific */
+p {
+	/* http://www.w3.org/TR/css3-text/#hyphenation */
+	-webkit-hyphens : auto;
+	-webkit-hyphenate-character : "\2010";
+	-webkit-hyphenate-limit-after : 1;
+	-webkit-hyphenate-limit-before : 3;
+	-moz-hyphens : auto; 
+}
+
+
+/* Links & buttons */
+.btn{
+	display: inline-block;
+	font-size: 18px;
+	line-height: 55px;
+	background-color: rgba(255,255,255,.7);
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	text-align: center;
+	color: #000;
+	padding: 0 30px;
+	text-decoration: none;
+	font-weight: 900;
+	margin-bottom: 30px;
+}
+.btn:hover{
+	background-color: rgba(255,255,255,.9);
+}
+
+a.more{
+	text-transform: uppercase;
+	padding: 6px 10px 4px 10px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	color: #fff;
+	background-color: rgba(0,0,0, .2);
+	font-size: 10px;
+	white-space: nowrap;
+}
+a.more:hover{
+	text-decoration: none !important;
+	background-color: rgba(0,0,0, .3);
+}
+
+/*  GLOBAL OBJECTS ============================================================================= */
+
+.separator{
+	height: 7px;
+	width: 100%;
+	clear: both;
+	margin: 60px auto 0 auto;
+	position: relative;
+	bottom: -4px;
+	background: transparent url(../img/bg_separator.png) no-repeat center center;
+}
+.cnt_separator{
+	margin-bottom: 60px;
+}
+
+
+/**/
+.alpha_8, .alpha_16, .alpha_24, .alpha_32, .sponsors{
+	padding: 60px 0 0 0;
+}
+.alpha_8{
+	background-color: rgba(255,255,255, .08);
+}
+.alpha_16{
+	background-color: rgba(255,255,255, .16);
+}
+.alpha_24{
+	background-color: rgba(255,255,255, .24);
+}
+.alpha_32{
+	background-color: rgba(255,255,255, .32);
+}
+
+/* VENDOR-SPECIFIC ============================================================================= */
+
+html { 
+-webkit-overflow-scrolling : touch; 
+-webkit-tap-highlight-color : rgb(52,158,219); 
+-webkit-text-size-adjust : 100%; 
+-ms-text-size-adjust : 100%; }
+
+.clear{ 
+	zoom : 1; 
+}
+
+
+
+/* Site_Header */
+#site_header{
+	text-align: center;
+}
+
+.grusp_header{
+	width: 140px;
+	margin: 0 auto 30px auto;
+	padding-top: 20px;
+	text-align: center;	
+}
+.grusp_header h4{
+	color: #000;
+	opacity: .3;
+	font-size : 20px;
+	line-height : 30px; 
+}
+a#logo_grups{
+	height: 67px;
+	width: 140px;
+	display: block;
+	background: transparent url(../img/logo_grusp.png) no-repeat center center;
+	text-indent: -99999em;
+	margin-bottom: 20px;
+}
+
+.event_title{
+	margin-bottom: 30px;
+}
+.event_logo {
+	text-align: center;	
+}
+.event_logo img{
+	width: 100%;
+	max-width: 220px;
+	height: auto;
+}
+
+.share{
+	width: 400px;
+	margin: 0 auto 60px auto;
+}
+
+.share h4{
+	line-height: 1em;
+	margin-bottom: -5px;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, .3);
+}
+.addthis_wrapper{
+	background-color: rgba(0,0,0,.1);
+	padding: 20px 20px 10px 20px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+}
+.addthis_wrapper .addthis_toolbox{
+	margin: 0 !important;
+}
+
+
+/* speaker */
+.speaker{
+	width: 80%;
+	margin: 50px auto 50px auto;
+}
+
+.speaker.right{
+	float: none !important;
+}
+.speaker_pix{
+	width: 18%;
+	float: left;
+}
+.speaker_bio{
+	width: 80%;
+	float: right;
+}
+
+.right .speaker_pix{
+	width: 18%;
+	float: right;
+}
+.right .speaker_bio{
+	width: 80%;
+	float: left;
+}
+.speaker_pix figure a img{
+	background-color: rgba(0,0,0,.2);
+	padding: 5%;
+	width: 90%;
+	height: auto;
+}
+
+/* social links */
+.social_grusp{
+	text-align: center;
+	margin: 20px auto -20px auto;
+}
+.social_grusp li{
+	display: inline;
+	margin: 0 2%;
+}
+.social_grusp li a{
+	display: inline-block;	
+	height: 54px;
+	width: 54px;
+	text-indent: -99999em;
+	background-color: transparent;
+	background-image: url(../img/sprite_social.png);
+	background-repeat: no-repeat;
+}
+
+.social_grusp li.grusp_fb a{
+	background-position: 0 -70px;
+}
+.social_grusp li.grusp_fb a:hover{
+	background-position: 0 0;
+}
+
+.social_grusp li.grusp_twitter a{
+	background-position: -67px -70px;
+}
+.social_grusp li.grusp_twitter a:hover{
+	background-position: -67px 0;
+}
+
+.social_grusp li.grusp_flickr a{
+	background-position: -136px -70px;
+}
+.social_grusp li.grusp_flickr a:hover{
+	background-position: -136px 0;
+}
+
+.social_grusp li.grusp_youtube a{
+	background-position: -202px -70px;
+}
+.social_grusp li.grusp_youtube a:hover{
+	background-position: -202px 0;
+}
+
+
+.social_grusp li.grusp_vimeo a{
+	background-position: -270px -70px;
+}
+.social_grusp li.grusp_vimeo a:hover{
+	background-position: -270px 0;
+}
+
+/* Table #schedule */
+#schedule{
+	width: auto;
+	color: #fff;
+	font-size: 13px;
+	margin: auto auto 60px auto;
+}
+
+#schedule thead th{
+	border-bottom: 2px solid #fff;
+	padding: 20px 10px;
+	text-align: left;
+	font-weight: 800;
+	color: #000;
+	font-size: 18px;
+	text-transform: uppercase;
+	border-left: 1px dashed rgba(255,255,255, .4);
+}
+#schedule td{
+	border-bottom: 1px solid rgba(255,255,255, .4);
+	border-left: 1px dashed rgba(255,255,255, .4);
+	padding: 20px;
+}
+#schedule thead th:first-child, #schedule td:first-child{
+	border-left: none;
+}
+
+.property_features tr:nth-child(even) {background: #f9f9f9;}
+.property_features tr:nth-child(odd) {background: #fff;}
+
+#schedule tr td:first-child{
+	width: 15%;
+	white-space: nowrap;
+}
+
+#schedule tr.common_event td, #schedule tr.common_event td h4{
+	text-align: center;
+}
+#schedule tr.common_event td:first-child{
+	text-align: left;
+}
+
+
+
+#schedule h4{
+	font-family: helvetica, verdana, arial, helve, sans-serif; 	
+	text-align: left;
+	letter-spacing: normal;
+	font-size: 16px;
+	font-weight: 800;
+}
+
+#schedule tr.break{
+	background: rgba(0,0,0,.05);
+}
+
+#schedule tr.break td h4{
+	color: #000;
+	font-size: 20px;
+	line-height: 30px;	
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+	letter-spacing: 1.3px;
+	font-weight: 400;
+	margin-left: -45px;
+}
+#schedule tr.break td h4 strong{
+	padding-left: 30px;
+	background: transparent url(../img/bg_break_symbols.png) no-repeat left 5px;
+}
+#schedule tr.break.lunch td h4 strong{
+	padding-left: 50px;
+	background: transparent url(../img/bg_break_symbols.png) no-repeat left -100px;
+}
+#schedule tr.break.happy_hour td h4 strong{
+	padding-left: 30px;
+	background: transparent url(../img/bg_break_symbols.png) no-repeat left -48px;
+}	
+
+
+#schedule td a{
+	text-decoration: none;
+	color: #fff;
+}
+#schedule td a:hover{
+	text-decoration: underline;
+}
+
+#schedule h4 a{
+	color: #000;
+}
+
+
+
+
+/* map */
+.map{
+	margin-bottom: 60px;
+}
+.map iframe{
+	width: 95%;
+	height: 320px;
+	border: 10px solid #fff;
+}
+/* legend */
+.legend dd, .legend dt{
+	margin: 0 20px 12px 0;
+	float: left;
+	padding: 0 15px;
+}
+.legend dd{
+	float: none;
+	clear: right;
+	height: 60px;
+	line-height: 60px;
+	vertical-align: middle;
+}
+
+
+.legend dt span{
+	background-color: rgba(255,255,255,.8);
+	height: 30px;
+	padding: 15px 0;
+	width: 60px;
+	display: block;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	border-radius: 100%;
+}
+
+.legend dt strong{
+	height: 30px;
+	width: 30px;
+	margin: 0 0 0 17px;
+	text-indent: -99999em;
+	display: block;
+	background: transparent url(../img/sprite_tip.png) no-repeat 0 -80px;
+}
+
+.legend dt.event_location, .legend dd.event_location{
+	padding: 0 0 10px 0;
+}
+.legend dt.event_location span{
+	height: 40px;
+	padding: 25px 0;
+	width: 90px;
+}
+.legend dt.event_location strong{
+	height: 50px;
+	width: 40px;
+	margin: 0 0 0 27px;
+	background: transparent url(../img/sprite_tip.png) no-repeat 0 0;
+}
+.legend dd.event_location{	
+	font-size: 16px;
+	height: 90px;
+	padding-top: 10px;
+	border-bottom: 1px solid rgba(255,255,255, .4);
+	line-height: 23px;
+}
+.legend dd.event_location strong{
+	display: block;
+	font-weight: 900;
+	font-size: 18px;
+}
+
+.legend dt.get_to strong{
+	background: transparent url(../img/sprite_tip.png) no-repeat 0 -150px;
+}
+.legend dt.stay strong{
+	background: transparent url(../img/sprite_tip.png) no-repeat 0 -220px;
+}
+
+
+/* Sponsors */
+.sponsors{
+	text-align: center;
+	margin-bottom: 80px;
+}
+.sponsors .banner{
+	display: inline-block;
+	margin-left: 1%;
+	margin-right: 1%;
+	line-height: 0;
+	text-align: center;
+	border: 1px solid rgba(255,255,255,.8);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,.5);
+	box-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+.sponsors .banner img{
+	width: 100%;
+	height: auto;
+}
+
+
+.gold_sponsors, .silver_sponsors, .bronze_sponsors{
+	clear: both;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.gold_sponsors .banner {
+	 width: 21.68%; 
+}
+.silver_sponsors .banner{
+	width: 16.8%;
+}
+.bronze_sponsors .banner{
+	width: 13.5%;
+}
+
+
+
+/* footer */
+
+.ftr_info{
+	margin: auto;
+	color: rgba(0,0,0,.5);
+	font-size: 12px;
+	text-align: center;
+	line-height: 30px;
+	padding-bottom: 30px;
+}
+.ftr_info a{
+	color: rgba(0,0,0,.5);
+	text-decoration: none;
+}
+.ftr_info a:hover{
+	text-decoration: underline;
+	color: rgba(255,255,255,.5);
+}
+.ftr_info ul{
+	display: inline;
+	color: rgba(255,255,255,.3);
+	margin-bottom: 30px;
+}
+.ftr_info ul li{
+	display: inline;
+	border-left: 1px solid;
+	padding-left: 10px;
+	margin: 0 10px 0 5px;
+}
+
+
+a#back_top{
+	display: block;
+	margin: auto;
+	height: 51px;
+	width: 81px;
+	text-indent: -99999em;
+	background: transparent url(../img/bg_back_top.png) no-repeat center top;
+}
+
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+	40% {-webkit-transform: translateY(-30px);}
+	60% {-webkit-transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+a#back_top:hover {
+	height: 81px;
+	margin-top: -31px;
+     -webkit-animation: bounce 1s infinite;
+     -moz-animation:    bounce 1s infinite;
+     -ms-animation:     bounce 1s infinite;
+     -o-animation:      bounce 1s infinite;
+}
+
+
+/**/
+@media screen and (max-width: 768px){
+
+	.share{
+		width: 70%;
+	}
+}
+
+/**/
+@media screen and (max-width: 620px){
+
+	.speaker, .share, .map.column_6, .legend.column_6{
+		width: 100%;
+	}
+}
+
+/**/
+@media screen and (max-width: 480px){
+	.event_logo {
+		width: 50%;
+		margin: auto;
+		float: none;	
+	}	
+	
+	.event_name{
+		text-align: center;
+	}
+	h1{
+		margin-bottom: -30px;
+	}
+	
+	.social_grusp li{
+		margin: 0 4.1%;
+	}
+	
+	
+	#schedule tr td:first-child{
+		width: auto;
+		white-space: normal;
+	}
+	
+	#schedule tr.break td h4{
+		margin-left: 0;
+	}
+	
+	.map iframe{
+		height: 200px;
+	}
+}
+
+/**/
+@media screen and (max-width: 320px){
+
+	
+	#schedule td{
+		padding: 5%;
+		line-height: 18px;
+	}
+	
+	#schedule h4{
+		line-height: 18px;
+		font-size: 14px;
+	}
+	
+	#schedule .more{
+		margin-top: 5px;
+	}
+	
+}
