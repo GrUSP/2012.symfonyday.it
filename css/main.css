@@ -600,6 +600,34 @@ a#logo_grups{
 	height: auto;
 }
 
+.sponsors h4 {
+	font-size: 24px;
+
+}
+
+.sponsors .gold {
+	color: #DBB541;
+}
+
+.sponsors .silver {
+	color: #BFBFBF;
+}
+
+.sponsors .bronze {
+	color: #7B7058;
+}
+
+.sponsors li {
+	text-align: left;
+}
+
+.sponsors  .euro {
+	font-family: helvetica, verdana, arial, helve, sans-serif; 	
+	text-align: left;
+	letter-spacing: normal;
+	font-size: 24px;
+	font-weight: 800;	
+}
 
 .gold_sponsors, .silver_sponsors, .bronze_sponsors{
 	clear: both;
