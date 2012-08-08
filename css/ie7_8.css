@@ -1,0 +1,42 @@
+/* --------------------------------------------------
+IE7 instructions
+-------------------------------------------------- */
+.alpha_8, .alpha_16, .alpha_24, .alpha_32, .sponsors{
+	padding: 60px 0 0 0;
+	
+	background-color: transparent;
+}
+
+
+h2{
+	color: #222;
+}
+
+
+.event_logo img{
+	width: auto;
+	height: auto;
+}
+
+.speaker_pix figure a img{
+	background-color: #555;
+}
+
+#schedule thead th{
+	border-bottom: 2px solid #fff;
+	border-left: 1px dashed #f1f1f1;
+}
+#schedule td{
+	border-bottom: 1px solid #f1f1f1;
+	border-left: 1px dashed #f1f1f1;
+}
+
+
+.legend dd.event_location{	
+	border-bottom: 1px solid #f1f1f1;
+}
+
+
+
+img { 
+-ms-interpolation-mode : bicubic; }
