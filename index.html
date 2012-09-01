@@ -13,7 +13,7 @@
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-	
+
 	<link href='http://fonts.googleapis.com/css?family=Exo:200,900,700,400|Pacifico' rel='stylesheet' type='text/css'>
   
 	<!-- Included CSS Files -->
@@ -33,11 +33,80 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>		
+	<script>
+	function initialize_map() {
+	        var mapOptions = {
+	          zoom: 15,
+	          center: new google.maps.LatLng(45.06448847650592, 7.6572346687316895),
+	          mapTypeId: google.maps.MapTypeId.ROADMAP
+	        }
+	        var map = new google.maps.Map(document.getElementById('map_canvas'),
+	                                      mapOptions);
+
+	        var I3P = new google.maps.Marker({
+	            position: new google.maps.LatLng(45.06539781596831, 7.657513618469238),
+	            map: map,
+	            icon: 'img/marker_i3p.png',
+				title:"I3P"
+	        });
+			var hotel_sanpaolo = new google.maps.Marker({
+	            position: new google.maps.LatLng(45.0598373, 7.6529137),
+	            map: map,
+	            icon: 'img/marker_hotel.png',
+				title:"Hotel Residence San Paolo"
+	        });
+			var stazione_portasusa = new google.maps.Marker({
+	            position: new google.maps.LatLng(45.068641008917346, 7.6639509201049805),
+	            map: map,
+	            icon: 'img/marker_trasporti.png',
+				title:"Stazione Metro e Treni Porta Susa"
+	        });
+			var fermata_tram_tribunale = new google.maps.Marker({
+	            position: new google.maps.LatLng(45.069232038276766, 7.660109996795654),
+	            map: map,
+	            icon: 'img/marker_trasporti.png',
+				title:"Fermata Autobus e Tram Palazzo di Giustizia"
+	        });
+			var fermata_tram_ferrucci = new google.maps.Marker({
+	            position: new google.maps.LatLng(45.06244240982845, 7.655389308929443),
+	            map: map,
+	            icon: 'img/marker_trasporti.png',
+				title:"Fermata Corso Peshiera/Ferrucci"
+	        });
+			var fermata_tram_ferrucci = new google.maps.Marker({
+	            position: new google.maps.LatLng(45.06577670314182, 7.655142545700073),
+	            map: map,
+	            icon: 'img/marker_trasporti.png',
+				title:"Fermata Corso Ferrucci/Bandiera"
+	        });
+			var pizzeria = new google.maps.Marker({
+	            position: new google.maps.LatLng(45.06510228222967, 7.654681205749512),
+	            map: map,
+	            icon: 'img/marker_ristoranti.png',
+				title:"Pizzeria Quelli Che Ben Pensano 2"
+	        });
+			var pizzeria_solitiamici = new google.maps.Marker({
+	            position: new google.maps.LatLng(45.06733769180998, 7.66270637512207),
+	            map: map,
+	            icon: 'img/marker_ristoranti.png',
+				title:"Ristorante Quattro Soldi"
+	        });
+			var pizzeria_solitiamici = new google.maps.Marker({
+	            position: new google.maps.LatLng(45.06497535380877, 7.659240961074829),
+	            map: map,
+	            icon: 'img/marker_ristoranti.png',
+				title:"Mensana - Mensa Studenti Politecnico"
+	        });
+	
+	      }
+    </script>
 
 </head>
 
 
-<body>
+<body onload="initialize_map()">
+											
 
 	<div id="wrapper">
 		<div id="site_wrapper">
@@ -338,8 +407,7 @@
 				<div class="container group">
 					<h3 class="column_12">Location</h3>
 					<div class="column_6 map">
-<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.it/maps?f=q&amp;source=s_q&amp;hl=it&amp;geocode=&amp;q=Via+Pier+Carlo+Boggio,+49+Torino&amp;aq=0&amp;output=embed"></iframe>
-<!-- <br /><small><a href="https://maps.google.it/maps?f=q&amp;source=embed&amp;hl=it&amp;geocode=&amp;q=Via+Giulio+Pastore,+21,+Cesena&amp;aq=0&amp;oq=via+giulio+pastore+21+cese&amp;sll=41.442726,12.392578&amp;sspn=12.428609,25.64209&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Via+Giulio+Pastore,+47522+Cesena+Forl%C3%AC-Cesena,+Emilia+Romagna&amp;z=14&amp;ll=44.157116,12.215339" style="color:#0000FF;text-align:left">Visualizzazione ingrandita della mappa</a></small>	 -->				
+						<div id="map_canvas"></div>				
 					</div>
 					
 					<div class="column_6 legend right">

@@ -562,7 +562,7 @@ em.plus{
 .map{
 	margin-bottom: 60px;
 }
-.map iframe{
+.map #map_canvas{
 	width: 95%;
 	height: 320px;
 	border: 10px solid #fff;
