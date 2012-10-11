@@ -463,6 +463,23 @@ em.plus{
 	background-position: -270px 0;
 }
 
+a.slides {
+	display: inline-block;	
+	height: 32px;
+	width: 32px;
+	padding: 5px 0 0 35px;
+	background-color: transparent;
+	background-image: url(../img/slides.png);
+	background-repeat: no-repeat;
+}
+
+a.slides {
+	background-position: 0 -42px;
+}
+a:hover.slides{
+	background-position: 0 0;
+}
+
 /* Table #schedule */
 #schedule{
 	width: auto;
